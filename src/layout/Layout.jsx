@@ -6,15 +6,20 @@ import { Navbar } from "../components/navbar/Navbar";
 export const Layout = () => {
   return (
     <div className="flex h-screen">
-      {/* Sidebar - Hidden on small screens, visible on large screens */}
-      <div className="hidden lg:block lg:max-w-[369px] w-full h-full">
+      {/* Sidebar - Fixed on large screens */}
+      <div className="hidden  lg:block lg:w-[280px] fixed left-0 top-0 h-full  bg-white ">
         <Sidebar />
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
-        <Navbar />
-        <div className="flex-1 p-4 overflow-auto">
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col lg:ml-[280px]">
+        {/* Fixed Navbar */}
+        <div className="fixed top-0 left-0 lg:left-[280px] right-0 bg-white shadow-md z-50">
+          <Navbar />
+        </div>
+
+        {/* Scrollable Page Content */}
+        <div className="flex-1  overflow-auto p-4 mt-[100px]">
           <Outlet />
         </div>
       </div>

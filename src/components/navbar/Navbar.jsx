@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <div>
       <div className=" bg-[#043249] text-white  py-4 px-6 ">
-        <div className="flex lg:flex-row flex-row gap-3 justify-between items-center ">
+        <div className="flex lg:flex-row flex-row  justify-between items-center ">
           <div>
             <h1 className=" lg:text-4xl font-medium ">Hello, Abid</h1>
             <p className=" text-lg ">
