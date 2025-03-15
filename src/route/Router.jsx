@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layout/Layout";
 import HomePage from "../pages/admin/home/HomePage";
+import UserPage from "../pages/admin/user/UserPage";
 
 createBrowserRouter;
 
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
 
       {
         path: "/users",
-        element: <div>users</div>,
+        element: <UserPage></UserPage>,
       },
       {
         path: "/categories",

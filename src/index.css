@@ -5,3 +5,21 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+/* and design pleachelder text size change */
+
+input.ant-input.ant-input-lg.css-dev-only-do-not-override-240cud {
+    font-size: 20px;
+}
+
+
+.custom-table .ant-table-thead > tr > th {
+    background-color: #eaf6ff !important; /* Light Blue Header */
+    font-weight: bold;
+  }
+  .custom-table .ant-table-tbody > tr > td {
+    padding: 16px; /* Adjust Row Padding */
+  }
+  .custom-table .ant-table-bordered .ant-table-container {
+    border-radius: 8px !important; /* Rounded Corners */
+  }
