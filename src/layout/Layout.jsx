@@ -19,7 +19,7 @@ export const Layout = () => {
         </div>
 
         {/* Scrollable Page Content */}
-        <div className="flex-1  overflow-auto p-4 mt-[100px]">
+        <div className="flex-1 bg-[#ebf8ff]   overflow-auto lg:p-8 mt-[100px]">
           <Outlet />
         </div>
       </div>
